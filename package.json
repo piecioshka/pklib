@@ -1,30 +1,23 @@
 {
-    "name": "pklib",
-    "description": "Sack with simple helper functions",
-    "version": "2.0.0",
     "private": true,
+    "name": "pklib",
+    "description": "Sack with helper functions",
+    "version": "2.0.0",
+    "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
         "email": "piecioshka@gmail.com",
-        "url": "http://piecioshka.pl/"
+        "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "build": "uglifyjs dist/pklib.js -m --source-map dist/pklib.min.map -o dist/pklib.min.js",
-        "docs": "docker -i dist -o docs -s yes -I -u -x pklib.min.js --extras fileSearch,goToLine"
+        "build": "uglifyjs src/pklib.js -m -o dist/pklib.min.js"
+    },
+    "devDependencies": {
+        "uglify-js": "^3.19.3"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/piecioshka/pklib.js.git"
+        "url": "git://github.com/piecioshka/pklib.git"
     },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://piecioshka.mit-license.org/"
-        }
-    ],
-    "devDependencies": {
-        "phantomjs": "latest",
-        "uglify-js": "latest",
-        "docker": "latest"
-    }
+    "main": "./dist/pklib.min.js"
 }

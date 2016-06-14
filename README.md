@@ -1,19 +1,22 @@
-# pklib.js
+# pklib
 
-![](https://img.shields.io/badge/version-2.0.0-brightgreen.svg)
 ![](https://img.shields.io/badge/depracated-true-ff69b4.svg)
 
-> `pklib.js` is results of repeat the same patterns on web engines, to create the same things.
+🔨 Sack with helper functions
 
-## Warning!
+## Motivation
+
+`pklib` is results of repeat the same solutions in different projects.
+
+## Warning! ⚠️
 
 **DEPRECATED! Please be careful when you use library form `tags` directory.**<br/>
 **This are my working directory from a long time.**
 
-## Install
+## Installation
 
 ```html
-<script src="dist/pklib.js"></script>
+<script src="src/pklib.js"></script>
 ```
 
 ## Usage
@@ -32,4 +35,4 @@ pklib.common.defer(function () {
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org/) @ 2011
+[The MIT License](https://piecioshka.mit-license.org/) @ 2011
